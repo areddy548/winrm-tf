@@ -1,6 +1,6 @@
 ---
 - name: Please wait and have a coffee!
-  hosts: windows_servers
+  hosts: "{{ service_hosts }}"
   gather_facts: yes
   tasks:
     - name: Install mobaxterm
