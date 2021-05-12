@@ -1,0 +1,10 @@
+---
+- name: Please wait and have a coffee!
+  hosts: windows_servers
+  gather_facts: yes
+  tasks:
+    - name: Install mobaxterm
+      win_chocolatey:
+          name: mobaxterm
+          state: present
+          ignore_checksums: yes
